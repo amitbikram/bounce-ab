@@ -1,0 +1,338 @@
+<!doctype html><html lang="en" class="aem-AuthorLayer-Preview"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bounce Animation Framework</title><script>window.Bounce = window.Bounce || {
+            parentSelector : '.aem-AuthorLayer-Preview',
+            selectors: [
+                '.dexter-Position',
+                '.dexter-FlexContainer',
+            ]
+        };</script><style>body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .position {
+            text-align: center;
+            margin: 100px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 1440px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        .logo {
+            font-size: 40px;
+        }
+        .logo-text {
+            font-size: 30px;
+            padding-left: 40px;
+        }
+        .content {
+            width: 1440px;
+            margin: 0 auto; 
+        }
+        #heroImage {
+            text-align: center;
+        }
+        #subHeader {
+            font-size: 27px;
+            line-height: 46px;
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: bold;
+            padding:200px 0;
+        }
+        #text1 {
+            font-size: 48px;
+            line-height: 77px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin-bottom: 10rem;
+        }
+        #text1::after {
+            content: "";
+            display: block;
+            width: 4rem;
+            height: 0.375rem;
+            background: #000;
+            margin: 0 auto;
+        }
+        #text2 {
+            padding-bottom: 100px;
+        }
+        #text2 h3 {
+            font-size: 64px;
+            line-height: 77px;
+            justify-content: center;
+            font-weight: bold;
+            display: flex;
+        }
+        #text2 p {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: normal;
+            color: #363636;
+            text-align: center;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #box3 h3 {
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: bold;
+            margin: 200px 0;
+            text-align: center;
+        }
+        #box5 {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: normal;
+            color: #363636;
+            text-align: center;
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+        #box6 {
+            display: flex;
+            justify-content: center;
+            padding-top: 200px;
+            width: 1440px;
+            margin: 0 auto;
+        }
+        #box6 img{
+            max-width: 100%;
+        }
+        #box7 {
+            text-align: center;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        #box7 h3{
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+        #box32 p {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: normal;
+            color: #363636;
+            text-align: center;
+        }
+
+        #box8 {
+            font-size: 48px;
+            line-height: 77px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin: 10rem 0;
+            padding-top: 100px;
+        }
+        #box8::after {
+            content: "";
+            display: block;
+            width: 4rem;
+            height: 0.375rem;
+            background: #000;
+            margin: 0 auto;
+        }
+        #box9 {
+            width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 200px;
+        }
+        #box10 {
+            width: 50%;
+        }
+        #box10 h3{
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: bold;
+            padding-right: 200px;
+            margin: 0;
+        }
+        #box10 p{
+            font-size: 18px;
+            line-height: 27px;
+            padding-right: 200px;
+        }
+        #box10 img {
+            margin-top: 200px;
+        }
+        #box11 {
+            width: 50%;
+            position: relative;
+        }
+        #box11 img {
+            max-width: 100%;
+        }
+        #box11 .img-1 {
+            top: 0;
+            position: absolute;
+            height: 100vh;
+            transform: translate(65%, 50%) rotate(90deg);
+            background-color: #fff;
+            background-image: url("https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/RxnN-galaxy-watch-active2-fitness-auto-tracking-running-woman-bottom-cover.webp");
+        }
+        #box11 .img-2 {
+            top: 0;
+            position: absolute;
+            height: 100vh;
+            background-image: url("https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/UREI-galaxy-watch-active2-fitness-auto-tracking-running-woman-bg.jpg");
+        }
+        #box11 .img-3 {
+            position: relative;
+            top: 0;
+        }
+        #box12 {
+            display: flex;
+            flex-direction: row;
+            background-repeat: no-repeat;
+            margin-top: 200px;
+            position: relative;
+            width: 1440px;
+            margin: auto;
+        }
+        #box14 {
+            margin: 200px 0;
+            padding: 100px;
+            background-image: url("https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/ez_f-galaxy-watch-active2-compatibility-banner-bg.jpg");
+        }
+        #box14 h3{
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: bold;
+        }
+        #box14 p{
+            font-size: 18px;
+            line-height: 27px;
+        }
+        #box15 {
+            display: flex;
+            justify-content: space-around;
+        }
+        #box16 {
+            flex: 1 auto;
+        }
+        #box17 {
+            width: 50%;
+        }
+        #box18 {
+            width: 50%;
+        }
+        #box19 {
+            display: flex;
+            margin-bottom: 200px;
+            align-items: stretch;
+        }
+        #box20 {
+            width: 30%;
+        }
+        #box21 img {
+            max-width: 100%;
+        }
+        #box21 {
+            width: 70%;
+            position: relative;
+        }
+        #box20 h3 {
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: bold;
+        }
+        #box20 p {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        #box21 .img1 {
+            position: absolute;
+            top: -150px;
+            left: 0;
+        }
+        #box21 {
+            position: relative;
+        }
+        #box21 .img3 {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            z-index: 2;
+        }
+        #box21 .img5 {
+            position: absolute;
+            top: 70px;
+            right: 100px;
+        }
+        #box23 {
+            width: 75%;
+            left: -15.3125rem;
+            position: relative;
+        }
+        #box24 {
+            position: absolute;
+            z-index: 99;
+            top: 0;
+        }
+        #box26 {
+            position: absolute;
+            top: 0;
+            z-index: 20;
+        }
+        #box25 h3 {
+            font-size: 64px;
+            line-height: 77px;
+            font-weight: bold;
+        }
+        #box13 {
+            position: relative;
+            max-width: 25.5rem;
+            padding-left: 20.6875rem;
+            font-size: 18px;
+            line-height: 27px;
+        }
+        #box23 .charger {
+            width: 65rem;
+            position: relative;
+            left: 0rem;
+            top: 13rem;
+            z-index: -1;
+        }
+        #box23 .shadow {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 120rem;
+        }
+        #box29 {
+            z-index: 20;
+        }
+        #box30, #box28 {
+            z-index: 10;
+        }
+        #box18 p {
+            font-size: 12px;
+            line-height: 20px;
+        }
+        #pinkWatch {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+        }
+        #blueWatch {
+            position: absolute;
+            left: 100px;
+            z-index: 1;
+        }</style><script>localStorage.setItem('animations', JSON.stringify(
+            [{ "selector": "text21", "uuid": "bedf318c-b4e3-473b-8f6b-cfd7842bbf90", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "text21", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "text22", "uuid": "7e967b0b-3726-47a1-beb6-c4806a4abf12", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "text22", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1", "animationDelay": "0.5" } }, { "selector": "image2", "uuid": "cd42b81a-9e9a-45dd-9a19-f1c800dcb860", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "image2", "scaleStart": "100", "scaleEnd": "80", "animationDuration": "1" } }, { "selector": "box3", "uuid": "81d675bb-c826-41e0-89a8-60ed65de59f7", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box3", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box4", "uuid": "f97b3725-8608-4ecd-b367-ca4e94e83286", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box4", "skewStart": "40", "skewEnd": "0", "animationDuration": "1" } }, { "selector": "box5", "uuid": "c74bae73-8c12-4c61-a859-fe9a9bd273a0", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box5", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box30", "uuid": "0e8c5bde-1667-4ed7-8565-5bcea4c463a7", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box30", "moveXStart": "0", "moveXEnd": "-100", "animationDuration": "1" } }, { "selector": "box31", "uuid": "44800a71-d049-4984-b79b-fe6f04e574d4", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box31", "moveXStart": "0", "moveXEnd": "-200", "animationDuration": "1", "animationDelay": "0.5" } }, { "selector": "box28", "uuid": "3943969e-ec8c-4502-bdf6-12869f22ec34", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box28", "moveXStart": "0", "moveXEnd": "100", "animationDuration": "1" } }, { "selector": "box27", "uuid": "97c40bf3-c9d8-4916-825b-562012326172", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box27", "moveXStart": "0", "moveXEnd": "200", "animationDuration": "1", "animationDelay": "0.5" } }, { "selector": "box7", "uuid": "d73f0a65-a81e-4e98-a0b6-e35120391c14", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box7", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box32", "uuid": "60a5daf2-0d5d-4579-aeda-2d5accfa7f6b", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box32", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1", "animationDelay": "0.5" } }, { "selector": "box35", "uuid": "a4c26071-d536-4369-a180-9972d0f30b7a", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box35", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box33", "uuid": "6e9f421c-6197-49ee-a20e-0f5752d91537", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box33", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1", "animationDelay": "0.5" } }, { "selector": "box34", "uuid": "4827ee1a-832b-4ce1-b801-d16c02f93ed4", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box34", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box11", "uuid": "d0f5505b-e0bf-481b-a551-5b4da2927a62", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box11", "moveXStart": "100", "moveXEnd": "0", "animationDuration": "1" } }, { "selector": "box22", "uuid": "eb1f8772-6133-4fa4-bddd-e101750feabc", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box22", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box17", "uuid": "ae187396-16ad-4446-bb42-9baf1566d4c7", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box17", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box18", "uuid": "7d40f629-99da-4443-9b89-7d890f51f6d6", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box18", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1", "animationDelay": "0.5" } }, { "selector": "box26", "uuid": "f3f99524-be79-4080-bc7a-95fdf2c566a9", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box26", "moveYStart": "-200", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box24", "uuid": "af62d5f2-a5d5-462a-9a80-65e6ba77389e", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box24", "fadeStart": "0", "fadeEnd": "100", "animationDuration": "1", "animationDelay": "1" } }, { "selector": "box25", "uuid": "5f29624a-793e-4687-abb3-663757203984", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box25", "fadeStart": "0", "fadeEnd": "100", "animationDuration": "1", "animationDelay": "1" } }, { "selector": "blueWatch", "uuid": "9152f615-551d-4484-8578-bd499dd1130b", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": 0, "animationEasing": "ease-out", "animationName": "blueWatch", "moveYStart": "-20", "moveYEnd": "0", "animationDuration": "2", "animationDirection": "alternate" } }, { "selector": "pinkWatch", "uuid": "7da971b4-52ce-4d4b-ac96-5f69d8d94213", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": 0, "animationEasing": "ease-out", "animationName": "pinkWatch", "moveYStart": "-10", "moveYEnd": "10", "animationDuration": "1", "animationDelay": "1", "animationDirection": "alternate" } }, { "selector": "box36", "uuid": "a9b9028b-e4f8-46a8-b2f5-abceaf3b7623", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box36", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }, { "selector": "box37", "uuid": "ead18f95-6e7a-4422-8021-3ae7610a0358", "animationObj": { "effectType": "view", "animationFillMode": "both", "animationIteration": "1", "animationEasing": "ease-out", "animationName": "box37", "fadeStart": "0", "fadeEnd": "100", "moveYStart": "100", "moveYEnd": "0", "animationDuration": "1" } }]
+        ));</script></head><body><div class="container"><div class="logo">SAMSUNG</div><div class="logo-text">Galaxy Watch Active2</div></div><div class="content"><div class="dexter-Position" id="heroImage"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/qYCV-heroimage.webp" alt="Awesome Collection"/></div><div class="dexter-Position" id="subHeader">The all-new Galaxy Watch Active2 now comes with a bigger customizable screen and fresh new look. It gives you precise health insights when you need it, while keeping you fully connected. Whether you are out for a run, or pushing through your next deadline the Galaxy Watch Active2 will keep you at your optimal performance inside and out.</div><div class="dexter-Position" id="text1">Design</div><div id="text2"><div class="dexter-Position" id="text21"><h3>Custom comfort on your wrist</h3></div><div class="dexter-Position" id="text22"><p>Get the looks and comfort you want for a wellness partner that you keep on 24/7. The Galaxy Watch Active2 is super customizable from day one. Choose from a tough stainless steel or lightweight aluminum body design, and personalize with a wide assortment of straps, to get a look that’s just perfect.1</p></div></div><div class="dexter-Position" id="image2"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/_DS_-galaxy-watch-active2-line-up.jpg" alt="watch"/></div><div class="dexter-Position" id="box3"><h3>Widen your space</h3></div><div class="dexter-Position" id="box4"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/Qj34-bigwatch.png" alt="Watch"/></div><div class="dexter-Position" id="box5">Maximize your screen space with an uninterrupted view on a sleek body fitted with a touch bezel for quick control. Galaxy Watch Active2 features an enlarged display with a pure black screen and a border that's hardly there for more space to get the insight you need.</div><div id="box6"><div class="dexter-Position" id="box27"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/YXdM-image3.webp" alt="image1" class="img-3"/></div><div class="dexter-Position" id="box28"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/va0T-image4.webp" alt="image1" class="img-1"/></div><div class="dexter-Position" id="box29"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/slKn-image1.png" alt="image1" class="img-4"/></div><div class="dexter-Position" id="box30"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/5GEy-image2.png" alt="image1" class="img-2"/></div><div class="dexter-Position" id="box31"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/KER3-image5.webp" alt="image1" class="img-5"/></div></div><div class="dexter-Position" id="box7"><h3>A watch to make your own</h3></div><div class="dexter-Position" id="box32"><p>Mix and match for a watch design that fits your look. Customize your Galaxy Watch Active2 with any 20mm watch strap.</p></div><div class="dexter-Position" id="box8">Experience</div><div id="box9"><div id="box10"><div class="dexter-Position" id="box35"><h3>Track your workout on your wrist</h3></div><div class="dexter-Position" id="box33"><p>Galaxy Watch Active2 tracks your movements so you can just slip it on and get working out. With swimming added to automatic tracking you now get seven exercises, while manual tracking works for all activities for dozens you can track. Running coach function gives you actionable advice in real time. 5,6</p></div><div class="dexter-Position" id="box34"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/gVSz-galaxy-watch-active2-fitness-auto-tracking-gui.jpg" alt="fitness tarcker"/></div></div><div class="dexter-Position" id="box11"><div class="img-1"></div><div class="img-2"></div><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/vj7N-women.png" class="img-3"/></div></div><div id="box12"><div id="box23"><div class="dexter-Position" id="box24"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/frq0-galaxy-watch-active2-battery-charging-watch-gui.png"/></div><div class="dexter-Position" id="box26"><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/A_lx-galaxy-watch-active2-battery-charging-watch-cloud-silver.png"/></div><img class="shadow" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/ll5_-galaxy-watch-active2-battery-charging-shadow-effect.webp"/> <img class="charger" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/Xyk6-galaxy-watch-active2-battery-charging-wireness-charger.jpg"/></div><div class="dexter-Position" id="box25"><h3>Power<br/>that lasts<br/>the day</h3></div></div><div class="dexter-Position" id="box13">Take your Galaxy Watch Active2 out for the day with a battery that lasts the day and more with normal use. Back home, just lay it on the compact magnetic wireless charger to bring it back to full, no charging jacks or wires required.14,15</div><div id="box14"><div id="box15"><div id="box16"><div class="dexter-Position" id="box22"><h3>Get connected<br/>to your device</h3></div><div class="dexter-Position" id="box17"><p>Wide compatibility with both Galaxy and non-Galaxy smartphones. Get started by seeing which devices are compatible with Galaxy Watch Active2.</p></div><div class="dexter-Position" id="box18"><p>* Android : Android 5.0 (L OS) or higher, RAM 1.5GB above (Samsung/Non Samsung)</p><p>* iOS : iPhone 5 and above, iOS 9.0 or above.</p></div></div><div><img src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/KjBP-galaxy-watch-active2-compatibility-banner-line-drawing.png"/></div></div></div><div id="box19"><div id="box20"><div class="dexter-Position" id="box36"><h3>Keeps up<br/>where<br/>you go</h3></div><div class="dexter-Position" id="box37"><p>Take your watch along on the road less traveled. Galaxy Watch Active2 goes where you go with an IP68 and 5ATM water and dust rating plus military grade durability to handle a range of conditions, so you can keep it on to go farther and experience more. 16,1</p></div></div><div id="box21"><img class="img1" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/TFr3-galaxy-watch-active2-water-proof-water-effect-01.png"/><div class="dexter-Position" id="blueWatch"><img class="img2" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/vtq5-galaxy-watch-active2-water-proof-cloud-silver.png"/></div><img class="img3" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/4ZBg-galaxy-watch-active2-water-proof-water-effect-02.png"/><div class="dexter-Position" id="pinkWatch"><img class="img4" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/E6Kh-galaxy-watch-active2-water-proof-pink-gold.png"/></div><img class="img5" src="https://uploads.codesandbox.io/uploads/user/ef582fa0-178c-452d-ac85-f7cc493df9b9/4ZBg-galaxy-watch-active2-water-proof-water-effect-02.png"/></div></div></div><script src="bundle.js"></script></body></html>
